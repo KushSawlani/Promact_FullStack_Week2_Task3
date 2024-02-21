@@ -1,0 +1,83 @@
+/* Navbar styles */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.navbar-menu {
+  flex-grow: 1; /* Grow to take remaining space */
+}
+
+.menu-items {
+  list-style-type: none;
+  display: flex;
+  justify-content: center; /* Center the menu items */
+}
+
+.menu-items li {
+  margin-right: 20px;
+  display: inline;
+}
+
+.menu-items li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* User info styles */
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info-logged-in {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-greeting {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.btn {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
