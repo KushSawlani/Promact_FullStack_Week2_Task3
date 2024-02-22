@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useAuth0 } from "@auth0/auth0-react";
 import './App.css';
+import ImageCarousel from './ImageCarousel';
 
 function App() {
   const { loginWithRedirect,logout,user, isAuthenticated, isLoading } = useAuth0();
@@ -22,6 +23,7 @@ function App() {
   return (
     <div className="App">
       <nav className="navbar">
+        
         <div className="container">
           <a href="#" className="logo">My Webpage</a>
           <div className="navbar-menu">
@@ -37,7 +39,7 @@ function App() {
             
               // Display user info if logged in
               <div className="user-info-logged-in">
-                {/* {console.log(user)} */}
+                {console.log(user)}
                 <span className="user-name">Hi, {user.name}</span>
                 <img src={user.picture} alt="Profile" className="profile-icon" />
                 <button className="btn" onClick={handleLogout}>Logout</button>
@@ -49,6 +51,7 @@ function App() {
           </div>
         </div>
       </nav>
+      {/* <ImageCarousel className="carousel-container"/> */}
     </div>
   );
 }

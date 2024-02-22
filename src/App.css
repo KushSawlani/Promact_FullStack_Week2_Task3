@@ -6,6 +6,11 @@
 }
 
 
+.App{
+  background: linear-gradient(#141E30, #243B55);
+  height: 100vh;
+}
+
 
 .navbar {
   background-color: #333;
@@ -80,4 +85,23 @@
   height: 40px;
   border-radius: 50%;
   margin-left: 10px;
+}
+
+.carousel-container{
+  max-height: 90vh;
+  overflow: hidden;
+}
+
+.carousel-container .carousel{
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: fill;
+}
+
+.carousel .carousel-image{
+  height: 90vh;
+  width: 90%;
+  max-height: 100%;
 }
